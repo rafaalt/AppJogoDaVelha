@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditTextWithRoundedBorders">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text_selector</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:hint">Seu placeholder aqui</item>
+    </style>
+
+    <style name="radioButtonTamanhoTabuleiro">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:background">@drawable/radio_tamanho_tabuleiro_selector</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="android:onClick">onClickedTamanho</item>
+    </style>
+</resources>

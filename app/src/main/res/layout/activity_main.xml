@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".view.MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/jogodavelha"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/mainColor"
+        android:textSize="30dp"
+        android:text="Tipo de Jogo:"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_jogador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vs Jogador"
+            android:paddingHorizontal="10dp"
+            android:checked="true"
+            android:background="@drawable/radio_button_selector"
+            android:textAlignment="center"
+            android:button="@android:color/transparent"
+            android:onClick="onClickedTipoJogo"/>
+        <RadioButton
+            android:id="@+id/radioBot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vs Bot"
+            android:paddingHorizontal="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/radio_button_selector"
+            android:button="@android:color/transparent"
+            android:textAlignment="center"
+            android:onClick="onClickedTipoJogo"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/mainColor"
+        android:textSize="30dp"
+        android:text="Nome dos Jogadores:"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextJogador1"
+        android:hint="Jogador 1"
+        style="@style/EditTextWithRoundedBorders"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextJogador2"
+        android:hint="Jogador 2"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="50dp"
+        style="@style/EditTextWithRoundedBorders"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/mainColor"
+        android:textSize="30dp"
+        android:text="Tamanho do Tabuleiro:"
+        android:layout_marginVertical="10dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/radioGroup">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/tamTabuleiro3"
+                style="@style/radioButtonTamanhoTabuleiro"
+                android:text="3x3"
+                android:checked="true"
+                android:tag="3"/>
+
+            <RadioButton
+                android:id="@+id/tamTabuleiro4"
+                style="@style/radioButtonTamanhoTabuleiro"
+                android:text="4x4"
+                android:tag="4"/>
+
+            <RadioButton
+                android:id="@+id/tamTabuleiro5"
+                style="@style/radioButtonTamanhoTabuleiro"
+                android:text="5x5"
+                android:tag="5"/>
+
+            <RadioButton
+                android:id="@+id/tamTabuleiro6"
+                style="@style/radioButtonTamanhoTabuleiro"
+                android:text="6x6"
+                android:tag="6"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp">
+            <RadioButton
+                android:id="@+id/tamTabuleiro7"
+                style="@style/radioButtonTamanhoTabuleiro"
+                android:text="7x7"
+                android:tag="7"/>
+
+            <RadioButton
+                android:id="@+id/tamTabuleiro8"
+                style="@style/radioButtonTamanhoTabuleiro"
+                android:text="8x8"
+                android:tag="8"/>
+
+            <RadioButton
+                android:id="@+id/tamTabuleiro9"
+                style="@style/radioButtonTamanhoTabuleiro"
+                android:text="9x9"
+                android:tag="9" />
+
+            <RadioButton
+                android:id="@+id/tamTabuleiro10"
+                style="@style/radioButtonTamanhoTabuleiro"
+                android:text="10x10"
+                android:tag="10" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="Começar Partida"
+        android:id="@+id/btnComecarPartida"
+        android:backgroundTint="@color/mainColor"
+        android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="Histórico de Partidas"
+        android:id="@+id/btnHistorico"
+        android:backgroundTint="@color/mainColor"/>
+
+</LinearLayout>
