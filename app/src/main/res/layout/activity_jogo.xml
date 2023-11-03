@@ -1,10 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<!-- activity_tabuleiro.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.JogoActivity">
+    android:paddingTop="80dp"
+    android:paddingBottom="50dp"
+    android:paddingHorizontal="25dp">
+    <!-- Outros elementos podem ser adicionados aqui -->
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/txtVezJogador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Vez do Jogador"
+        android:textColor="@color/mainColor"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtNomeJogador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bot"
+        android:textColor="@color/jogador1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/txtVezJogador"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/txtNomeJogador">
+    </GridLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="Recomeçar"
+        android:id="@+id/btnRecomearPartida"
+        android:backgroundTint="@color/botao1"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/btnNovoJogo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="Novo Jogo"
+        android:id="@+id/btnNovoJogo"
+        android:backgroundTint="@color/botao2"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

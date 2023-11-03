@@ -2,8 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="backgroundColor">#4E5880</color>
+    <color name="backgroundColor">#BAC7FD</color>
     <color name="mainColor">#152345</color>
     <color name="checked">#F4E76F</color>
     <color name="unchecked">#A5A5A5</color>
+    <color name="jogador1">#0078C8</color>
+    <color name="jogador2">#D50101</color>
+    <color name="botao1">#152345</color>
+    <color name="botao2">#6387DD</color>
+    <color name="empate">#838383</color>
 </resources>

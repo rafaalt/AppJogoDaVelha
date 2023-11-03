@@ -20,7 +20,7 @@
         android:layout_gravity="center"
         android:textStyle="bold"
         android:textColor="@color/mainColor"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:text="Tipo de Jogo:"/>
 
     <RadioGroup
@@ -57,7 +57,7 @@
         android:layout_gravity="center"
         android:textStyle="bold"
         android:textColor="@color/mainColor"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:text="Nome dos Jogadores:"/>
 
     <EditText
@@ -84,7 +84,7 @@
         android:layout_gravity="center"
         android:textStyle="bold"
         android:textColor="@color/mainColor"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:text="Tamanho do Tabuleiro:"
         android:layout_marginVertical="10dp"/>
     <RadioGroup
@@ -158,7 +158,7 @@
         android:layout_marginHorizontal="50dp"
         android:text="Começar Partida"
         android:id="@+id/btnComecarPartida"
-        android:backgroundTint="@color/mainColor"
+        android:backgroundTint="@color/botao1"
         android:layout_marginVertical="10dp"/>
 
     <Button
@@ -167,6 +167,6 @@
         android:layout_marginHorizontal="50dp"
         android:text="Histórico de Partidas"
         android:id="@+id/btnHistorico"
-        android:backgroundTint="@color/mainColor"/>
+        android:backgroundTint="@color/botao2"/>
 
 </LinearLayout>
