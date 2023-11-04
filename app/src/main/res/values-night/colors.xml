@@ -2,16 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="backgroundColor">#C0CCFD</color>
-    <color name="backgroundColorList">#D6DEFF</color>
-    <color name="mainColor">#152345</color>
+    <color name="backgroundColor">#020922</color>
+    <color name="backgroundColorList">#0D1432</color>
+    <color name="mainColor">#94B2FA</color>
     <color name="checked">#F4E76F</color>
-    <color name="unchecked">#A5A5A5</color>
+    <color name="unchecked">#686464</color>
     <color name="jogador1">#0078C8</color>
     <color name="jogador2">#D50101</color>
-    <color name="botao1">#152345</color>
-    <color name="botao2">#6387DD</color>
+    <color name="botao1">#5483F4</color>
+    <color name="botao2">#B0C0E8</color>
     <color name="empate">#5C5C5C</color>
-    <color name="textColor">#1B1A1A</color>
+    <color name="textColor">#FFFFFF</color>
     <color name="textColorButton">#131313</color>
 </resources>

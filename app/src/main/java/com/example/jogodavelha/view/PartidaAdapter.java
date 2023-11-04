@@ -68,8 +68,8 @@ public class PartidaAdapter extends BaseAdapter {
             jogador2.setText(jogo.getNomeJogador2() + "  ✅");
         }
         else if(jogo.getVencedor() == 3){
-            jogador1.setText("⬛  " + jogo.getNomeJogador1());
-            jogador2.setText(jogo.getNomeJogador2() + "  ⬛");
+            jogador1.setText("↔️  " + jogo.getNomeJogador1());
+            jogador2.setText(jogo.getNomeJogador2() + "  ↔️");
         }
         data.setText(jogo.getData());
         horario.setText(jogo.getHorario());

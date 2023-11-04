@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="vs"
-        android:textColor="@color/black"
+        android:textColor="@color/textColor"
         android:textSize="15dp"
         android:id="@+id/adapterVS"
         android:layout_toRightOf="@id/adapterJogador1" />

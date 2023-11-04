@@ -38,6 +38,7 @@
             android:checked="true"
             android:background="@drawable/radio_button_selector"
             android:textAlignment="center"
+            android:textColor="@color/textColorButton"
             android:button="@android:color/transparent"
             android:onClick="onClickedTipoJogo"/>
         <RadioButton
@@ -49,6 +50,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/radio_button_selector"
             android:button="@android:color/transparent"
+            android:textColor="@color/textColorButton"
             android:textAlignment="center"
             android:onClick="onClickedTipoJogo"/>
     </RadioGroup>
