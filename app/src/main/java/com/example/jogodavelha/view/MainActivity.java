@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             String jogador2 = textJogador2.getText().toString();
             //Verificacao dos Nomes:
             if(this.jogoDaVelha.isBot()){
-                if(jogador1.length() < 2 || jogador1.contains(" ")){
+                if(jogador1.length() <=0 || jogador1.contains(" ")){
                     Toast.makeText(MainActivity.this, "Jogador 1 Inválido. Por favor retire os espaços.", Toast.LENGTH_SHORT).show();
                 }//Só precisa verificar jogador 1.
                 else {

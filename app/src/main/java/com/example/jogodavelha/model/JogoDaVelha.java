@@ -51,6 +51,7 @@ public class JogoDaVelha implements Serializable {
         this.vencedor = 0;
         this.qtJogadas = 0;
         this.jogadasTabuleiro = new int[tamanhoTabuleiro][tamanhoTabuleiro];
+        this.ultimaJogadaBot = -1;
     }
     //Verifica no tabuleiro de Jogadas se a posicao ja foi jogada.
     public boolean posicaoExiste(int posicao){
@@ -65,7 +66,7 @@ public class JogoDaVelha implements Serializable {
             return true;
     }
     public int verificarVencedor() {
-        // 0 - Tab Vazio
+        // 0 - Jogo em andamento ainda
         // 1 - Jogador 1
         // 2 - Jogador 2
         // 3 - Velha
@@ -154,9 +155,8 @@ public class JogoDaVelha implements Serializable {
     public int melhorJogada(int posBusca){
         int tamanho = this.jogadasTabuleiro.length;
         int posicao = -1;
-        // Verifica se está a um movimento de ganhar.
-        // Mesma ideia para verificar vencedor
-        // Para bot ganhar
+        // Verifica se está a um movimento de ganhar ou perder.
+        // Mesma ideia da funcao verificarVencedor
         // Verificar as linhas
         for(int i = 0;i<tamanho;i++){
             posicao = faltaUmPraGanhar(this.jogadasTabuleiro[i], posBusca);
