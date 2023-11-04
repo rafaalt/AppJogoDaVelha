@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">JogoDaVelha</string>
+
+    <style name="emoji_certo">\u2705</style>
+
+    <string name="emoji_errado">\u274C</string>
+    <string name="emoji_empate">\u2B1B</string>
 </resources>

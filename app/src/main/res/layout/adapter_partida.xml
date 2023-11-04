@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.PartidaAdapter"
+    android:background="@color/backgroundColorList"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u2705 Jogador 1"
+        android:textColor="@color/jogador1"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/adapterJogador1"
+        android:layout_marginHorizontal="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vs"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:id="@+id/adapterVS"
+        android:layout_toRightOf="@id/adapterJogador1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogador 2 \u274C"
+        android:textColor="@color/jogador2"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/adapterJogador2"
+        android:layout_toRightOf="@id/adapterVS"
+        android:layout_marginHorizontal="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3x3"
+        android:textColor="@color/empate"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/adapterTamanho"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:textColor="@color/empate"
+        android:textSize="10dp"
+        android:id="@+id/adapterData"
+        android:layout_below="@id/adapterVS"
+        android:layout_margin="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horario"
+        android:textColor="@color/empate"
+        android:textSize="10dp"
+        android:id="@+id/adapterHorario"
+        android:layout_toRightOf="@id/adapterData"
+        android:layout_below="@id/adapterVS"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>

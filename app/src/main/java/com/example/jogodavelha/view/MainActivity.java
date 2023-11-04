@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         EditText textJogador1 = (EditText) findViewById(R.id.editTextJogador1);
         EditText textJogador2 = (EditText) findViewById(R.id.editTextJogador2);
         Button btnComecarPartida = (Button) findViewById(R.id.btnComecarPartida);
+        Button btnHistorico = (Button) findViewById(R.id.btnHistorico);
+        Button btnLeader = (Button) findViewById(R.id.btnMainLeaderboard);
+
         this.tabButton = new RadioButton[11];
         this.jogoDaVelha = new JogoDaVelha();
 
@@ -32,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             String jogador2 = textJogador2.getText().toString();
             //Verificacao dos Nomes:
             if(this.jogoDaVelha.isBot()){
-                if(jogador1.length() < 0 || jogador1.contains(" ")){
+                if(jogador1.length() < 2 || jogador1.contains(" ")){
                     Toast.makeText(MainActivity.this, "Jogador 1 Inválido. Por favor retire os espaços.", Toast.LENGTH_SHORT).show();
                 }//Só precisa verificar jogador 1.
                 else {
@@ -58,6 +61,16 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             }
+        });
+
+        btnHistorico.setOnClickListener(view -> {
+            Intent intent = new Intent(this, HistoricoActivity.class);
+            startActivity(intent);
+        });
+
+        btnLeader.setOnClickListener(view -> {
+            Intent intent = new Intent(this, LeaderboardActivity.class);
+            startActivity(intent);
         });
     }
 

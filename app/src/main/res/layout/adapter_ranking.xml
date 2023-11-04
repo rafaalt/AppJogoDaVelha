@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.RankingAdapter"
+    android:background="@color/backgroundColorList"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/adapterPosicao"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Jogador"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/adapterJogador"
+        android:layout_toRightOf="@id/adapterPosicao"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="0 vitórias"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:id="@+id/adapterQtVitorias"/>
+</RelativeLayout>

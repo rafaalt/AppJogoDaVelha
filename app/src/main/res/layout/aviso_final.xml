@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/backgroundColor"
+    android:elevation="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEU VELHA!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/mainColor"
+        android:layout_gravity="center"
+        android:id="@+id/avisoTexto"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rafael Venceu!"
+        android:textSize="20dp"
+        android:textColor="@color/mainColor"
+        android:layout_gravity="center"
+        android:id="@+id/avisoTxtJogador" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REINICIAR"
+        android:width="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/botao1"
+        android:id="@+id/avisoBtnReiniciar"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLTAR"
+        android:width="120dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/botao2"
+        android:id="@+id/avisoBtnVoltar"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
