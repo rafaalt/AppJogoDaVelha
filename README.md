@@ -6,6 +6,9 @@
 Jogo da Velha com tamanhos variados de tabuleiro, histórico de partidas,
 ranking de vitórias e bot inteligente.
 
+Autor: Rafael Assunção Ladeira Torga
+
+Contato: rafaaslat@gmail.com | github.com/rafaalt
 
 ## Requisitos do Sistema
 - [Android Studio](https://developer.android.com/studio)
